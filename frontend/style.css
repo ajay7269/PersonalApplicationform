@@ -1,0 +1,285 @@
+ /* Base Body Styling */
+    body {
+      background-color: #b1d0f1ff;
+      padding: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* Unified Section Styling */
+    .section-card,
+    .form-section,
+    .captcha-card {
+      background-color: #ffffff;
+      border: 1px solid #007bff;
+      border-radius: 8px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    /* Section Title */
+    .section-title,
+    .form-section h5 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #1f3c88;
+      font-style: italic;
+      text-decoration: underline;
+      margin-bottom: 20px;
+    }
+
+    /* Form Labels */
+    .form-label,
+    label {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #1f3c88;
+    }
+
+    /* Inputs and Textarea */
+    .form-control,
+    textarea,
+    select {
+      font-size: 0.95rem;
+      padding: 8px 12px;
+      border-radius: 6px;
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    /* Tabular Add/Remove Buttons */
+    .tabular-group-add {
+      display: inline-block;
+      background: #619af0;
+      color: #fff;
+      padding: 6px 12px;
+      border-radius: 5px;
+      margin-top: 10px;
+      text-decoration: none;
+    }
+
+    .tabular-group-add:hover {
+      background: #4086f0;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .remove-btn {
+      color: red;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    /* Placeholder Styling */
+    .form-control::placeholder {
+      font-size: 0.9rem;
+      color: #adb5bd;
+    }
+
+    /* Upload Boxes */
+    .upload-box,
+    .file-upload,
+    .captcha-box {
+      width: 265px;
+      border: 1px solid #4086f0;
+      background-color: #f8f9fa;
+      border-radius: 8px;
+      text-align: center;
+      padding: 20px;
+      margin-top: 10px;
+    }
+
+    /* Upload Note */
+    .custom-file-note,
+    .form-note,
+    .file-upload small {
+      font-size: 0.8rem;
+      color: #666;
+      margin-top: 5px;
+      display: block;
+    }
+
+    /* Captcha Text Styling */
+    .captcha-image {
+      font-family: monospace;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 5px;
+      text-decoration: line-through;
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      padding: 8px 15px;
+      margin-top: 10px;
+      display: inline-block;
+    }
+
+    .captcha-refresh {
+      cursor: pointer;
+      font-size: 20px;
+      color: #0d6efd;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+
+    /* Employment Section Table */
+    .employment-section input {
+      min-width: 140px;
+    }
+
+    .employment-section .form-label {
+      font-size: 0.85rem;
+    }
+
+    .employment-section th {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #1f3c88;
+    }
+
+    /* Title with Logo */
+    .form-title {
+      display: flex;
+      margin-top: -19px;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(to right, #ddeaff, #d7e1f5);
+      padding: 20px;
+      border-bottom: 0 solid #4099ff;
+    }
+
+    .form-title h3 {
+      margin: 0;
+      color: #1e3a8a;
+    }
+
+    .form-title img {
+      height: 60px;
+    }
+
+    /* Responsive Grid */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+
+    [class^="col-"] {
+      padding-left: 10px;
+      padding-right: 10px;
+      box-sizing: border-box;
+    }
+
+    .col-md-6,
+    .col-md-4,
+    .col-md-3,
+    .col-md-2 {
+      flex: 1 1 100%;
+    }
+
+    @media (min-width: 576px) {
+      .col-md-6 {
+        flex: 0 0 50%;
+      }
+
+      .col-md-4 {
+        flex: 0 0 33.3333%;
+      }
+
+      .col-md-3 {
+        flex: 0 0 25%;
+      }
+
+      .col-md-2 {
+        flex: 0 0 16.6667%;
+      }
+    }
+
+    /* Buttons */
+    .btn-outline-light {
+      border: 1px solid #ffffff;
+      color: #141212;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+      color: #ffffff;
+      padding: 8px 16px;
+      border-radius: 6px;
+    }
+
+    /* Full Screen Layout */
+    .container-fluid,
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* Small Devices (phones) */
+    @media (max-width: 575.98px) {
+      .form-title {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .form-title img {
+        height: 40px;
+        margin-top: 10px;
+      }
+
+      .upload-box,
+      .file-upload,
+      .captcha-box {
+        width: 100%;
+      }
+
+      .section-card,
+      .form-section,
+      .captcha-card {
+        padding: 15px;
+      }
+
+      .form-label {
+        font-size: 0.85rem;
+      }
+
+      .section-title {
+        font-size: 1rem;
+      }
+
+      .btn-primary,
+      .btn-outline-light {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+
+
+    /*Small Devices (Moblie)*/
+    @media (min-width: 320px) {
+      .container {
+        max-width: 425px;
+      }
+    }
+
+
+    /* Medium Devices (Tablet) */
+    @media (min-width: 768px) {
+      .container {
+        max-width: 960px;
+      }
+    }
+
+    /* Large Devices (Laptop and Desktop) */
+    @media (min-width: 992px) {
+      .container {
+        max-width: 1140px;
+      }
+    }
