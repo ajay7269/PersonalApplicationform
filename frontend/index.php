@@ -685,7 +685,7 @@
       <table class="table table-bordered align-middle text-center">
         <thead style="background-color: #f4f7f9;">
           <tr style="color: #1a237e;">
-            <th class="text-start" style="color: #0d6efd;"> </th>
+            <th class="text-start" style="color: #0d6efd;"></th>
             <th style="color: #1a237e;">1</th>
             <th style="color: #1a237e;">2</th>
             <th style="color:  #1a237e;">3</th>
@@ -1198,7 +1198,7 @@ d) The company/deputed client owns any intellectual property created by you duri
 
 15    Your contract is coterminous with the contract between deputed client you are deputed and Company. You will be paid only as per the payouts approved and provided by the deputed client. You will be paid full and final payment (if any) within 30 days from your date of leaving or date of receiving your resignation and no dues certificate from your supervisor whichever is later.
 
-16    * Your net take home amount will be affected by prevailing laws like Income Tax, LWF, Professional Tax and other state level compliance contributions as applicable. Company has the authority to change or remove any or the entire allowance\ reimbursement components without any written or verbal communication\confirmation to\from you.
+16    Your net take home amount will be affected by prevailing laws like Income Tax, LWF, Professional Tax and other state level compliance contributions as applicable. Company has the authority to change or remove any or the entire allowance\ reimbursement components without any written or verbal communication\confirmation to\from you.
 
 17    All your rights and obligations in the course of this contract are strictly limited to the terms and conditions of this contract. Accordingly, except as specifically indicated in this contract, you will not be entitled to any other benefits, subsidy, allowances or compensation from the deputed Client/company.
 
@@ -1282,7 +1282,7 @@ I understand & accept all the terms and conditions mentioned above. I certify th
 
   <script>
     function generateCaptcha() {
-      const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+      const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'; 
       let captcha = '';
       for (let i = 0; i < 6; i++) {
         captcha += chars.charAt(Math.floor(Math.random() * chars.length));
